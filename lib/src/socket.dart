@@ -83,7 +83,7 @@ class Socket extends EventEmitter {
    * @api private
    */
   subEvents() {
-    if (this.subs?.isEmpty == true) return;
+    if (this.subs.isEmpty == true) return;
 
     var io = this.io;
     this.subs = [
